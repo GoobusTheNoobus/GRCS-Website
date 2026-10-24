@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/style.css"
+---
+
+<Layout title="泓河中文学校  |  GRCS" lang="en">
+	<div class="titles">
+		<h1 lang="zh-CN" class="title-zh">泓河中文学校</h1>
+		<h1 lang="en" class="title-en">Grand River Chinese School</h1>
+	</div>
+	
+	<div class="select-box">
+		<p>
+			请选择您的语言
+		</p>
+		<p>
+			Please select your language
+		</p>
+	</div>
+	
+
+	<nav aria-label="Choose your language" class="nav-box">
+		<div lang="zh-CN">
+			<h1>简体中文</h1>
+			<p>欢迎来到我们的学校!</p>
+			<a href="/">进入网站 -></a>
+		</div>
+		<div lang="en">
+			<h1>English</h1>
+			<p>Welcome to our school!</p>
+
+			<a href="/">Continue -></a>
+		</div>
+		
+	</nav> 
+</Layout>
+
+<style scoped>
+
+.titles {
+	color: var(--color-text);
+	margin-top: 0;
+}
+
+.title-zh {
+	font-size: clamp(3rem, 5vw, 5rem);
+	font-weight: 600;
+	text-align: center;
+
+	margin: 3rem 0 0;
+}
+
+.title-en {
+	font-size: clamp(1rem, 2.1vw, 2.1rem);
+	text-align: center;
+	font-weight: 500;
+	color: var(--color-primary);
+
+	margin-top: 0.5rem;
+}
+
+.select-box {
+	border-top: var(--color-muted) 1px solid;
+
+	font-size: 1.15rem;
+	text-align: center;
+	color: var(--color-muted);
+
+	width: 40vw;
+	margin: 3rem auto 0;
+	padding-top: 1.25rem;
+}
+
+.select-box p {
+	margin: 0.25rem auto;
+}
+
+.nav-box {
+	width: 60vw;
+	margin: 3rem auto 0;
+
+	align-items: center;
+
+	display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-box div {
+	border: var(--color-border) 2px solid;
+	border-radius: 15px;
+	padding: 1rem 2.5rem 2rem;
+
+	width: 40%;
+	margin: 0 auto 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-box div a {
+	color: var(--color-primary);
+	text-decoration: none;
+	margin-top: auto;
+	transition: 100ms ease;
+}
+
+.nav-box div a:hover {
+	color: var(--color-primary-dark);
+}
+
+.nav-box div p {
+	margin-top: 0;
+	margin-bottom: 3rem;
+}
+
+.nav-box div h1 {
+	margin-bottom: 1rem;
+
+}
+
+</style>
