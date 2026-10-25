@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/style.css"
+---
+
+<Layout title="泓河中文学校  |  GRCS" lang="en">
+    <h1 lang="zh-CN" class="title-zh">
+        404 找不到网页
+    </h1>
+    <h1 lang="en" class="title-en">
+        404 Not Found
+    </h1>
+    <div>
+        <p lang="zh-CN" class="text-zh">
+            对不起，我们找不到这个网页。
+        </p>
+        <p lang="en" class="text-en">
+            Sorry, the page you were looking for doesn't exist.
+        </p>
+    </div>
+</Layout>
+
+<style scoped>
+.title-en{
+    margin: 3rem auto 0;
+    margin-top: 0;
+    text-align: center;
+}
+.title-zh{
+    margin: 3rem auto 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+}
+div{
+    padding: 3rem;
+}
+p{
+    justify-content: left;
+}
+</style>
