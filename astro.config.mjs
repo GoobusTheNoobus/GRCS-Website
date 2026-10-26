@@ -5,8 +5,8 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 
     i18n: {
-        locales: ["en", "cn"], 
-        /* The two locales are "en" for English and "cn" for Chinese. 
+        locales: ["en", "zh"], 
+        /* The two locales are "en" for English and "zh" for Chinese. 
         Check the docs for how we can set up localized pages:
         https://docs.astro.build/en/guides/internationalization/#create-localized-folders
         */
