@@ -1,6 +1,9 @@
 # How to contribute
 
-Basic HTML/CSS/JS knowledged are required.
+Basic HTML/CSS/JS knowledged are required. Also, make sure to not add too much content yourself, as 
+instructed by Mr. Jin. Instead, focus on making the website look good. Do not do too much, as we need 
+to first demonstrate the home page in both English and Chinese. Use the `lang=` attribute so the browser 
+knows the language the page was written in.
 
 ## NPM
 
