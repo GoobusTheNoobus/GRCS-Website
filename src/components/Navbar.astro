@@ -1,0 +1,67 @@
+---
+import "../styles/style.css"
+
+interface Props {
+    lang: "en" | "zh"
+}
+
+const {lang} = Astro.props
+
+---
+
+<nav>
+    <div id="brand">
+        <a href="/">
+            <img src="/logo.png">
+            <div>
+                <p class="brand-zh">泓河中文学校</p>
+                <p class="brand-en">Grand River Chinese School</p>
+            </div>
+        </a>
+    </div>
+</nav>
+
+<style>
+
+nav {
+    display: flex;
+    margin: 1rem 5rem 4rem;
+    padding: 1rem 0rem 2rem;
+
+    border-bottom: var(--color-muted) 1px solid;
+}
+
+img {
+    height: 4.6rem;
+    border-radius: 15px;
+}
+
+#brand a {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    text-decoration: none;
+}
+
+#brand a div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#brand a div p {
+    margin: 0rem 0rem;
+}
+
+.brand-zh {
+    color: var(--color-primary);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.brand-en {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+</style>

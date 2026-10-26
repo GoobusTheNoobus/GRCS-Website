@@ -1,6 +1,7 @@
 ---
 
 import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
 import "../styles/style.css"
 
 interface Props {
@@ -20,10 +21,8 @@ const {title, lang} = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<main>
-			<slot />
-			
-		</main>
+		<Navbar lang={lang}/>
+		<slot />
 		
 		<Footer />
 	</body>
