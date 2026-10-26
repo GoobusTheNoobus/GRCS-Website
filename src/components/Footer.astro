@@ -1,12 +1,13 @@
 <footer>
     <div class="left">
+        <p>
+            Website made and designed by <a href="https://github.com/GoobusTheNoobus">David Huang</a> and <a href="https://github.com/mr-chen-rui">Ryan Xie</a>
+        </p>
         <p class="copyright">
             © 2026 Grand River Chinese School. All rights reserved.<br />
             © 2026 泓河中文学校。版权所有。
         </p>
-        <p>
-            Website made and designed by <a href="https://github.com/GoobusTheNoobus">David Huang</a> and <a href="https://github.com/mr-chen-rui">Ryan Xie</a>
-        </p>
+        
     </div>
     
 
@@ -31,7 +32,8 @@
         gap: 2rem;
         margin-top: auto;
 
-        background-color: var(--color-primary);
+        background-color: var(--color-footer);
+        color: var(--color-footer-text);
         padding: 2rem 3rem;
     }
 
@@ -52,12 +54,13 @@
     }
 
     a {
-        color: var(--color-accented);
+        color: var(--color-footer-link);
+        text-decoration: none;
         transition: color 160ms ease;
     }
 
     a:hover {
-        color: #fff
+        color: var(--color-footer-muted)
     }
 
 </style>

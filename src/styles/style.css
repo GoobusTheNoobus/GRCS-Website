@@ -14,6 +14,12 @@
   --color-text: #292524;
   --color-muted: #78716c;
   --color-border: #e7ded7;
+
+  /* Footer */
+  --color-footer: #751722;
+  --color-footer-text: #fdf6f0;
+  --color-footer-muted: #e8d9d5;
+  --color-footer-link: #d4c3c2;
 }
 
 html,
