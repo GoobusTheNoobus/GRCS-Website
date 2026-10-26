@@ -70,6 +70,22 @@ file, so we can put a `<Navbar>` in `Layout.astro`, and every page will use a
 `public/` used to store public assets (like favicon and fonts). Fonts are stored in
 `public/fonts/`.
 
+The two locales are "en" for English and "zh" for Chinese. 
+Check the docs for how we can set up [localized pages](https://docs.astro.build/en/guides/internationalization/#create-localized-folders).
+
+TL;DR here is that our tree should look somewhat like this:
+```
+pages
+├─ some_page.astro
+├─ zh
+│  ├─ some_page.astro
+├─ en
+│  ├─ some_page.astro
+
+```
+
+In other words, 
+
 ## Styling
 
 Use the CSS variables for color (declared in `src/styles/style.css`).
