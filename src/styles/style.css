@@ -9,7 +9,7 @@
   --color-primary: #a61b29;
   --color-primary-dark: #751722;
   --color-background: #fbf7f2;
-  --color-background-dark : #6e6a65;
+  --color-background-dark: #6e6a65;
   --color-surface: #ffffff;
   --color-text: #292524;
   --color-muted: #78716c;
@@ -25,4 +25,8 @@ body {
   font-family: "Inter";
   line-height: 1.6;
   min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
