@@ -13,27 +13,61 @@ const {lang} = Astro.props
     <div id="brand">
         <a href="/">
             <img src="/logo.png">
-            <div>
-                <p class="brand-zh">泓河中文学校</p>
-                <p class="brand-en">Grand River Chinese School</p>
-            </div>
         </a>
     </div>
+
+    <div class="nav-links">
+        <a href={"/" + lang}>
+            {lang == "en" ? "Home" : "首页"}
+        </a>
+        <a href={"/" + lang + "/courses"}>
+            {lang == "en" ? "Chinese Courses" : "中文课"}
+        </a>
+        <a href={"/" + lang + "/interest"}>
+            {lang == "en" ? "Interest Classes" : "兴趣课"}
+        </a>
+        <a href="https://grcs.pages.dev/">
+            泓河开卷™ {lang == "en" ? "AI Reading" : "AI阅读"} [↗]
+        </a>
+    </div>
+
 </nav>
 
 <style>
 
 nav {
     display: flex;
-    margin: 1rem 5rem 4rem;
-    padding: 1rem 0rem 2rem;
+    gap: 4rem;
+    padding: 2rem 3rem;
 
-    border-bottom: var(--color-muted) 1px solid;
+    background-color: var(--color-surface);
+    border-bottom: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+
+    border-radius: 0 0 40px 40px;
+    height: 4rem;
+}
+
+.nav-links {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary-dark)
 }
 
 img {
-    height: 4.6rem;
-    border-radius: 15px;
+    height: 3rem;
 }
 
 #brand a {
@@ -43,25 +77,5 @@ img {
     text-decoration: none;
 }
 
-#brand a div {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#brand a div p {
-    margin: 0rem 0rem;
-}
-
-.brand-zh {
-    color: var(--color-primary);
-    font-weight: 900;
-    font-size: 2rem;
-}
-
-.brand-en {
-    color: var(--color-text);
-    font-weight: 600;
-}
 
 </style>
