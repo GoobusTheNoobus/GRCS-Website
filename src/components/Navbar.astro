@@ -35,47 +35,88 @@ const {lang} = Astro.props
 
 <style>
 
+
 nav {
     display: flex;
-    gap: 4rem;
-    padding: 2rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 4rem 1.5rem 3rem;
 
     background-color: var(--color-surface);
     border-bottom: 2px solid var(--color-primary);
     border-left: 2px solid var(--color-primary);
     border-right: 2px solid var(--color-primary);
 
-    border-radius: 0 0 40px 40px;
-    height: 4rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+#brand {
+    flex-shrink: 0;
+}
+
+#brand a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    height: 3.5rem;
+    width: auto;
+
+    transition: 200ms ease;
+    border-radius: 12px;
+}
+
+img:hover {
+    border: 3px solid var(--color-primary-dark);
 }
 
 .nav-links {
     display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    gap: 3rem;
     align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    min-width: 0;
 }
 
 .nav-links a {
     color: var(--color-primary);
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
-    color: var(--color-primary-dark)
+    color: var(--color-primary-dark);
 }
 
-img {
-    height: 3rem;
+/*  Mobile layout  */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.25rem 1rem;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 0.75rem 1.25rem;
+        width: 100%;
+    }
+
+    .nav-links a {
+        white-space: normal;
+        text-align: center;
+        font-size: 0.9rem;
+    }
 }
 
-#brand a {
-    display: flex;
-    justify-content: center;
-    gap: 1.6rem;
-    text-decoration: none;
-}
 
 
 </style>
