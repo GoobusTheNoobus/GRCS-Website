@@ -1,0 +1,24 @@
+---
+import "../styles/style.css"
+
+interface Props {
+    margin?: string, // Margin preferably in rem
+    padding?: string
+}
+
+const {margin = "1rem", padding = "1rem"} = Astro.props
+---
+
+<div class="panel">
+    <slot/>
+</div>
+
+<style scoped define:vars={{margin, padding}}>
+.panel{
+    margin: var(--margin);
+    padding: var(--padding);
+
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+}
+</style>

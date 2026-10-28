@@ -1,0 +1,29 @@
+---
+// src/components/Grid.astro
+interface Props {
+  gap?: string; // Gap (preferrably in rem)
+}
+
+const {
+  gap = "1rem"
+} = Astro.props;
+---
+
+<div class={"astro-grid"} role="list">
+  <slot />
+</div>
+
+<style define:vars={{gap}}>
+  .astro-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: var(--gap);
+    width: 100%;
+  }
+
+  @media (min-width: 200px) {
+    .astro-grid {
+      grid-template-columns: repeat(2, 1, minmax(0, 1fr));
+    }
+  }
+</style>

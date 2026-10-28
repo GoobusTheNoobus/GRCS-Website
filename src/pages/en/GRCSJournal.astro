@@ -1,0 +1,32 @@
+---
+import "../../styles/style.css"
+import Layout from "../../layouts/Layout.astro";
+import Grid from "../../components/Grid.astro";
+import Panel from "../../components/Panel.astro";
+
+interface Props {
+    lang: "en" | "zh"
+}
+
+const {lang} = Astro.props
+---
+
+<Layout title="校刊 | School Journal" lang="en">
+    <main>
+        <Grid>
+            <Panel margin="1rem" padding="1rem">
+                Two students made an amazing-looking website for GRCS!
+            </Panel>
+            <Panel margin="1rem" padding="1rem">
+                Another announcement!!
+            </Panel>
+        </Grid>
+    </main>
+</Layout>
+
+<style scoped>
+.panel{
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+}
+</style>
