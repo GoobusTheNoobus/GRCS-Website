@@ -1,0 +1,32 @@
+---
+import "../../styles/style.css"
+import Layout from "../../layouts/Layout.astro";
+import Grid from "../../components/Grid.astro";
+import Panel from "../../components/Panel.astro";
+
+interface Props {
+    lang: "en" | "zh"
+}
+
+const {lang} = Astro.props
+---
+
+<Layout title="校刊 | School Journal" lang="en">
+    <main>
+        <Grid>
+            <Panel margin="1rem" padding="1rem">
+                这是一个 placeholder
+            </Panel>
+            <Panel margin="1rem" padding="1rem">
+                又是一个 placeholder
+            </Panel>
+        </Grid>
+    </main>
+</Layout>
+
+<style scoped>
+.panel{
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+}
+</style>
