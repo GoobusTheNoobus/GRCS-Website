@@ -3,15 +3,9 @@ import "../../styles/style.css"
 import Layout from "../../layouts/Layout.astro";
 import Grid from "../../components/Grid.astro";
 import Panel from "../../components/Panel.astro";
-
-interface Props {
-    lang: "en" | "zh"
-}
-
-const {lang} = Astro.props
 ---
 
-<Layout title="校刊 | School Journal" lang="en">
+<Layout title="School Journal | GRCS" lang="en">
     <main>
         <Grid>
             <Panel margin="1rem" padding="1rem">
