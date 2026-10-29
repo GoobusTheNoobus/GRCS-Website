@@ -13,6 +13,9 @@ const {lang} = Astro.props
     <div id="brand">
         <a href="/">
             <img src="/logo.png">
+            <h1>
+                {lang == "en" ? "Grand River Chinese School" : "泓河中文学校"}
+            </h1>
         </a>
     </div>
 
@@ -62,6 +65,12 @@ nav {
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+
+#brand a h1{
+    text-decoration: none;
+    color: var(--color-primary);
+    padding-left: 1rem;
 }
 
 img {
