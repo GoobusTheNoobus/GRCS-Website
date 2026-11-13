@@ -1,4 +1,11 @@
 ---
+/*
+ * Grand River Chinese School Website
+ * -- Made by David and Ryan.
+ *
+ * All rights reserved.
+ * 版权所有，保留一切权利。
+ */
 
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
@@ -23,7 +30,7 @@ const {title, lang} = Astro.props;
 	<body>
 		<Navbar lang={lang}/>
 		<slot />
-		
+		<div id="gap"></div>
 		<Footer />
 	
 	</body>
@@ -41,4 +48,5 @@ const {title, lang} = Astro.props;
         flex-direction: column;
     }
 
+	#gap { height: 3rem; }
 </style>

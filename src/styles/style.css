@@ -1,53 +1,53 @@
-/************  Fonts  ************/
+/*
+ * Grand River Chinese School Website
+ * -- Made by David and Ryan.
+ *
+ * All rights reserved.
+ * 版权所有，保留一切权利。
+ */
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    font-family: "Inter";
+    src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
 :root {
-  --color-primary: #a61b29;
-  --color-primary-dark: #751722;
-  --color-background: #fbf7f2;
-  --color-background-dark: #6e6a65;
-  --color-surface: #faf6f3;
-  --color-text: #292524;
-  --color-muted: #938a83;
-  --color-border: #e7ded7;
+    --color-primary: #a61b29;
+    --color-primary-dark: #751722;
+    --color-background: #fbf7f2;
+    --color-background-dark: #6e6a65;
+    --color-surface: #faf6f3;
+    --color-text: #292524;
+    --color-muted: #938a83;
+    --color-border: #e7ded7;
 
-  /* Footer */
-  --color-footer: #751722;
-  --color-footer-text: #fdf6f0;
-  --color-footer-muted: #e8d9d5;
-  --color-footer-link: #d4c3c2;
+    /* Footer */
+    --color-footer: #751722;
+    --color-footer-text: #fdf6f0;
+    --color-footer-muted: #e8d9d5;
+    --color-footer-link: #d4c3c2;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-family: "Inter";
-  font-size: 1rem;
-  line-height: 1.6;
-  min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.6;
+    min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-main {
-  flex: 1;
-}
+* { box-sizing: border-box; }
 
 a {
-  text-decoration: none;
-  color: var(--color-primary);
-  transition: 300ms ease;
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: 300ms ease;
 }
 
 a:hover {
-  color: var(--color-primary-dark)
+    color: var(--color-primary-dark)
 }
