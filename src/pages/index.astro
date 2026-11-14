@@ -75,30 +75,29 @@ import "../styles/style.css"
 }
 
 nav {
-	width: 80vw;
-	margin: 3rem auto 0;
-	margin-bottom: 5rem;
-	gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
 
-	align-items: center;
-
-	display: flex;
-  	flex-wrap: wrap;
+    width: 80vw;
+    margin: 3rem auto 5rem;
 }
 
 nav div {
-	border: var(--color-border) 2px solid;
-	border-radius: 15px;
-	padding: 1rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
 
-	width: 30rem;
+    flex: 1 1 25rem;
+    max-width: 30rem;
+    min-width: 0;
 
-	display: flex;
-	flex-direction: column;
+    padding: 1rem 2.5rem 2rem;
+
+    border: 2px solid var(--color-border);
+    border-radius: 15px;
 }
-
-#nav-en { margin-right: auto; }
-#nav-cn { margin-left: auto; }
 
 nav div h1 {
 	margin-bottom: 1rem;

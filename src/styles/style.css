@@ -61,3 +61,8 @@ a:hover {
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-primary-dark);
 }
+
+*::selection {
+    background-color: var(--color-primary);
+    color: var(--color-footer-text);
+}
