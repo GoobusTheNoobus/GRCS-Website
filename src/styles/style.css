@@ -22,10 +22,10 @@
     --color-border: #e7ded7;
 
     /* Footer */
-    --color-footer: #751722;
+    --color-footer: var(--color-primary-dark);
     --color-footer-text: #fdf6f0;
     --color-footer-muted: #e8d9d5;
-    --color-footer-link: #d4c3c2;
+    --color-footer-link: #ecbbb8;
 }
 
 html,
@@ -49,5 +49,15 @@ a {
 }
 
 a:hover {
-    color: var(--color-primary-dark)
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--color-background);
+    border: var(--color-primary-dark) 2px solid;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-dark);
 }
